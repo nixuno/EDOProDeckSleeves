@@ -85,5 +85,11 @@
   <ItemGroup>
     <None Include="bin\Debug\sleeves\starterPlayer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\its-time-to-duel.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

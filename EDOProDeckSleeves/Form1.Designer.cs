@@ -36,6 +36,7 @@
             this.pictureBox_opponent = new System.Windows.Forms.PictureBox();
             this.button_AddSleeve = new System.Windows.Forms.Button();
             this.button_resetToDefaultSleeve = new System.Windows.Forms.Button();
+            this.button_duel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_opponent)).BeginInit();
             this.SuspendLayout();
@@ -118,12 +119,24 @@
             this.button_resetToDefaultSleeve.UseVisualStyleBackColor = true;
             this.button_resetToDefaultSleeve.Click += new System.EventHandler(this.button_resetToDefaultSleeve_Click);
             // 
+            // button_duel
+            // 
+            this.button_duel.BackgroundImage = global::EDOProDeckSleeves.Properties.Resources.eye;
+            this.button_duel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_duel.Location = new System.Drawing.Point(876, 1065);
+            this.button_duel.Name = "button_duel";
+            this.button_duel.Size = new System.Drawing.Size(90, 89);
+            this.button_duel.TabIndex = 8;
+            this.button_duel.UseVisualStyleBackColor = true;
+            this.button_duel.Click += new System.EventHandler(this.button_duel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(989, 1166);
+            this.Controls.Add(this.button_duel);
             this.Controls.Add(this.button_resetToDefaultSleeve);
             this.Controls.Add(this.button_AddSleeve);
             this.Controls.Add(this.pictureBox_opponent);
@@ -152,6 +165,7 @@
         private System.Windows.Forms.PictureBox pictureBox_opponent;
         private System.Windows.Forms.Button button_AddSleeve;
         private System.Windows.Forms.Button button_resetToDefaultSleeve;
+        private System.Windows.Forms.Button button_duel;
     }
 }
 

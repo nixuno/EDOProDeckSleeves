@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace EDOProDeckSleeves
 {
@@ -118,6 +119,12 @@ namespace EDOProDeckSleeves
             Bitmap defaultOpponent = EDOProDeckSleeves.Properties.Resources.starterOpponent;            
             defaultOpponent.Save($@"{projectIgnisFolderPath}\cover.png");
             pictureBox_opponent.Image = defaultOpponent;
+        }
+
+        private void button_duel_Click(object sender, EventArgs e) {
+            Stream str = EDOProDeckSleeves.Properties.Resources.its_time_to_duel;
+            SoundPlayer sp = new SoundPlayer(str);
+            sp.Play();
         }
     }
 }
