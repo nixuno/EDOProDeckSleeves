@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listBox_playerSleeve = new System.Windows.Forms.ListBox();
             this.listBox_opponentSleeve = new System.Windows.Forms.ListBox();
-            this.pictureBox_player = new System.Windows.Forms.PictureBox();
             this.label_playerSleeve = new System.Windows.Forms.Label();
             this.label_opponentSleeve = new System.Windows.Forms.Label();
-            this.pictureBox_opponent = new System.Windows.Forms.PictureBox();
             this.button_AddSleeve = new System.Windows.Forms.Button();
             this.button_resetToDefaultSleeve = new System.Windows.Forms.Button();
             this.button_duel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_player)).BeginInit();
+            this.pictureBox_opponent = new System.Windows.Forms.PictureBox();
+            this.pictureBox_player = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_opponent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_player)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox_playerSleeve
@@ -61,16 +62,6 @@
             this.listBox_opponentSleeve.TabIndex = 1;
             this.listBox_opponentSleeve.SelectedIndexChanged += new System.EventHandler(this.listBox_opponentSleeve_SelectedIndexChanged);
             // 
-            // pictureBox_player
-            // 
-            this.pictureBox_player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_player.Location = new System.Drawing.Point(646, 55);
-            this.pictureBox_player.Name = "pictureBox_player";
-            this.pictureBox_player.Size = new System.Drawing.Size(320, 467);
-            this.pictureBox_player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_player.TabIndex = 2;
-            this.pictureBox_player.TabStop = false;
-            // 
             // label_playerSleeve
             // 
             this.label_playerSleeve.AutoSize = true;
@@ -88,16 +79,6 @@
             this.label_opponentSleeve.Size = new System.Drawing.Size(178, 25);
             this.label_opponentSleeve.TabIndex = 4;
             this.label_opponentSleeve.Text = "Opponent Sleeve";
-            // 
-            // pictureBox_opponent
-            // 
-            this.pictureBox_opponent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_opponent.Location = new System.Drawing.Point(646, 580);
-            this.pictureBox_opponent.Name = "pictureBox_opponent";
-            this.pictureBox_opponent.Size = new System.Drawing.Size(320, 467);
-            this.pictureBox_opponent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_opponent.TabIndex = 5;
-            this.pictureBox_opponent.TabStop = false;
             // 
             // button_AddSleeve
             // 
@@ -130,6 +111,26 @@
             this.button_duel.UseVisualStyleBackColor = true;
             this.button_duel.Click += new System.EventHandler(this.button_duel_Click);
             // 
+            // pictureBox_opponent
+            // 
+            this.pictureBox_opponent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_opponent.Location = new System.Drawing.Point(646, 580);
+            this.pictureBox_opponent.Name = "pictureBox_opponent";
+            this.pictureBox_opponent.Size = new System.Drawing.Size(320, 467);
+            this.pictureBox_opponent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_opponent.TabIndex = 5;
+            this.pictureBox_opponent.TabStop = false;
+            // 
+            // pictureBox_player
+            // 
+            this.pictureBox_player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_player.Location = new System.Drawing.Point(646, 55);
+            this.pictureBox_player.Name = "pictureBox_player";
+            this.pictureBox_player.Size = new System.Drawing.Size(320, 467);
+            this.pictureBox_player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_player.TabIndex = 2;
+            this.pictureBox_player.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -146,10 +147,11 @@
             this.Controls.Add(this.listBox_opponentSleeve);
             this.Controls.Add(this.listBox_playerSleeve);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "EDOPro Sleeve Picker";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_opponent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_player)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

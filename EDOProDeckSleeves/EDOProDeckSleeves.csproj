@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>card.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -90,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\its-time-to-duel.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="card.ico" />
+    <Content Include="david-yugioh-card-back.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
