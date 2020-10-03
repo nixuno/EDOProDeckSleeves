@@ -5,7 +5,7 @@ Small application designed to let you easily replace your deck sleeves in EDOPro
 ![Screenshot](https://i.imgur.com/bbKWt2f.png)
 
 ## Download
-Under Construction
+[v0.1 Alpha Download](/releases/download/v0.1-alpha/EDOProSleeves.zip)
 
 ## Usage
 Under Construction
