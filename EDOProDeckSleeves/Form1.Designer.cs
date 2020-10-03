@@ -35,6 +35,7 @@
             this.label_opponentSleeve = new System.Windows.Forms.Label();
             this.pictureBox_opponent = new System.Windows.Forms.PictureBox();
             this.button_AddSleeve = new System.Windows.Forms.Button();
+            this.button_resetToDefaultSleeve = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_opponent)).BeginInit();
             this.SuspendLayout();
@@ -107,12 +108,23 @@
             this.button_AddSleeve.UseVisualStyleBackColor = true;
             this.button_AddSleeve.Click += new System.EventHandler(this.button_AddSleeve_Click);
             // 
+            // button_resetToDefaultSleeve
+            // 
+            this.button_resetToDefaultSleeve.Location = new System.Drawing.Point(284, 1065);
+            this.button_resetToDefaultSleeve.Name = "button_resetToDefaultSleeve";
+            this.button_resetToDefaultSleeve.Size = new System.Drawing.Size(266, 67);
+            this.button_resetToDefaultSleeve.TabIndex = 7;
+            this.button_resetToDefaultSleeve.Text = "Reset to Default";
+            this.button_resetToDefaultSleeve.UseVisualStyleBackColor = true;
+            this.button_resetToDefaultSleeve.Click += new System.EventHandler(this.button_resetToDefaultSleeve_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(989, 1166);
+            this.Controls.Add(this.button_resetToDefaultSleeve);
             this.Controls.Add(this.button_AddSleeve);
             this.Controls.Add(this.pictureBox_opponent);
             this.Controls.Add(this.label_opponentSleeve);
@@ -139,6 +151,7 @@
         private System.Windows.Forms.Label label_opponentSleeve;
         private System.Windows.Forms.PictureBox pictureBox_opponent;
         private System.Windows.Forms.Button button_AddSleeve;
+        private System.Windows.Forms.Button button_resetToDefaultSleeve;
     }
 }
 

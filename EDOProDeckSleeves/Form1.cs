@@ -95,8 +95,6 @@ namespace EDOProDeckSleeves
                             targetCopyPath = $@"{sleevesFolderPath}\{fileBaseName}.png";
                         }
                         //stream.Close();
-
-                        
                     }
                     
                     if (System.IO.File.Exists(targetCopyPath)) {
@@ -110,6 +108,16 @@ namespace EDOProDeckSleeves
                 }
                 PopulateSleeveLists();
             }
+        }
+
+        private void button_resetToDefaultSleeve_Click(object sender, EventArgs e) {
+            Bitmap defaultPlayer = EDOProDeckSleeves.Properties.Resources.starterPlayer;
+            defaultPlayer.Save($@"{projectIgnisFolderPath}\cover.png");
+            pictureBox_player.Image = defaultPlayer;
+
+            Bitmap defaultOpponent = EDOProDeckSleeves.Properties.Resources.starterOpponent;            
+            defaultOpponent.Save($@"{projectIgnisFolderPath}\cover.png");
+            pictureBox_opponent.Image = defaultOpponent;
         }
     }
 }
