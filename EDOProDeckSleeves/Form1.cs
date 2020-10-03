@@ -117,7 +117,7 @@ namespace EDOProDeckSleeves
             pictureBox_player.Image = defaultPlayer;
 
             Bitmap defaultOpponent = EDOProDeckSleeves.Properties.Resources.starterOpponent;            
-            defaultOpponent.Save($@"{projectIgnisFolderPath}\cover.png");
+            defaultOpponent.Save($@"{projectIgnisFolderPath}\cover2.png");
             pictureBox_opponent.Image = defaultOpponent;
         }
 
