@@ -21,7 +21,16 @@ namespace EDOProDeckSleeves
         string projectIgnisFolderPath = @"C:\ProjectIgnis\textures";
         public Form1() {
             InitializeComponent();
-            PopulateSleeveLists();
+            //If we can't find the EDOPro textures folder, it probably isn't installed.
+            if(!System.IO.Directory.Exists(projectIgnisFolderPath)) {
+                DialogResult goToDiscord = MessageBox.Show("Looks like EDOPro isn't installed. Would you like to open the EDOPro Discord to download it?", "EDOPro Missing", MessageBoxButtons.YesNo);
+                if(goToDiscord == DialogResult.Yes) {
+                    System.Diagnostics.Process.Start(@"https://discord.gg/ygopro-percy");
+                }
+                Environment.Exit(0);
+            } else {
+                PopulateSleeveLists();
+            }
         }
 
         private void PopulateSleeveLists() {
@@ -38,8 +47,7 @@ namespace EDOProDeckSleeves
             listBox_opponentSleeve.DisplayMember = "Name";
         }
 
-        private void listBox_playerSleeve_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void listBox_playerSleeve_SelectedIndexChanged(object sender, EventArgs e) {
             if (listBox_playerSleeve.SelectedIndex > -1) {
                 FileInfo selectedSleeve = (FileInfo)listBox_playerSleeve.Items[listBox_playerSleeve.SelectedIndex];
                 using (Bitmap selectedSleeveBitmap = new Bitmap(selectedSleeve.FullName)) {
