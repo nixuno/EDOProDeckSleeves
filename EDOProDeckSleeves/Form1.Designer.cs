@@ -50,55 +50,57 @@
             this.listBox_playerSleeve.Name = "listBox_playerSleeve";
             this.listBox_playerSleeve.Size = new System.Drawing.Size(623, 479);
             this.listBox_playerSleeve.TabIndex = 0;
-            this.listBox_playerSleeve.SelectedIndexChanged += new System.EventHandler(this.listBox_playerSleeve_SelectedIndexChanged);
+            this.listBox_playerSleeve.SelectedIndexChanged += new System.EventHandler(this.ListBox_playerSleeve_SelectedIndexChanged);
             // 
             // listBox_opponentSleeve
             // 
             this.listBox_opponentSleeve.FormattingEnabled = true;
             this.listBox_opponentSleeve.ItemHeight = 25;
-            this.listBox_opponentSleeve.Location = new System.Drawing.Point(12, 580);
+            this.listBox_opponentSleeve.Location = new System.Drawing.Point(12, 592);
             this.listBox_opponentSleeve.Name = "listBox_opponentSleeve";
             this.listBox_opponentSleeve.Size = new System.Drawing.Size(623, 479);
             this.listBox_opponentSleeve.TabIndex = 1;
-            this.listBox_opponentSleeve.SelectedIndexChanged += new System.EventHandler(this.listBox_opponentSleeve_SelectedIndexChanged);
+            this.listBox_opponentSleeve.SelectedIndexChanged += new System.EventHandler(this.ListBox_opponentSleeve_SelectedIndexChanged);
             // 
             // label_playerSleeve
             // 
             this.label_playerSleeve.AutoSize = true;
-            this.label_playerSleeve.Location = new System.Drawing.Point(13, 27);
+            this.label_playerSleeve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_playerSleeve.Location = new System.Drawing.Point(12, 15);
             this.label_playerSleeve.Name = "label_playerSleeve";
-            this.label_playerSleeve.Size = new System.Drawing.Size(145, 25);
+            this.label_playerSleeve.Size = new System.Drawing.Size(209, 37);
             this.label_playerSleeve.TabIndex = 3;
             this.label_playerSleeve.Text = "Player Sleeve";
             // 
             // label_opponentSleeve
             // 
             this.label_opponentSleeve.AutoSize = true;
-            this.label_opponentSleeve.Location = new System.Drawing.Point(13, 552);
+            this.label_opponentSleeve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_opponentSleeve.Location = new System.Drawing.Point(12, 552);
             this.label_opponentSleeve.Name = "label_opponentSleeve";
-            this.label_opponentSleeve.Size = new System.Drawing.Size(178, 25);
+            this.label_opponentSleeve.Size = new System.Drawing.Size(261, 37);
             this.label_opponentSleeve.TabIndex = 4;
             this.label_opponentSleeve.Text = "Opponent Sleeve";
             // 
             // button_AddSleeve
             // 
-            this.button_AddSleeve.Location = new System.Drawing.Point(12, 1065);
+            this.button_AddSleeve.Location = new System.Drawing.Point(12, 1087);
             this.button_AddSleeve.Name = "button_AddSleeve";
             this.button_AddSleeve.Size = new System.Drawing.Size(266, 67);
             this.button_AddSleeve.TabIndex = 6;
             this.button_AddSleeve.Text = "Add Sleeve";
             this.button_AddSleeve.UseVisualStyleBackColor = true;
-            this.button_AddSleeve.Click += new System.EventHandler(this.button_AddSleeve_Click);
+            this.button_AddSleeve.Click += new System.EventHandler(this.Button_AddSleeve_Click);
             // 
             // button_resetToDefaultSleeve
             // 
-            this.button_resetToDefaultSleeve.Location = new System.Drawing.Point(284, 1065);
+            this.button_resetToDefaultSleeve.Location = new System.Drawing.Point(284, 1087);
             this.button_resetToDefaultSleeve.Name = "button_resetToDefaultSleeve";
             this.button_resetToDefaultSleeve.Size = new System.Drawing.Size(266, 67);
             this.button_resetToDefaultSleeve.TabIndex = 7;
             this.button_resetToDefaultSleeve.Text = "Reset to Default";
             this.button_resetToDefaultSleeve.UseVisualStyleBackColor = true;
-            this.button_resetToDefaultSleeve.Click += new System.EventHandler(this.button_resetToDefaultSleeve_Click);
+            this.button_resetToDefaultSleeve.Click += new System.EventHandler(this.Button_resetToDefaultSleeve_Click);
             // 
             // button_duel
             // 
@@ -109,12 +111,13 @@
             this.button_duel.Size = new System.Drawing.Size(90, 89);
             this.button_duel.TabIndex = 8;
             this.button_duel.UseVisualStyleBackColor = true;
-            this.button_duel.Click += new System.EventHandler(this.button_duel_Click);
+            this.button_duel.Click += new System.EventHandler(this.Button_duel_Click);
             // 
             // pictureBox_opponent
             // 
             this.pictureBox_opponent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_opponent.Location = new System.Drawing.Point(646, 580);
+            this.pictureBox_opponent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_opponent.Location = new System.Drawing.Point(646, 592);
             this.pictureBox_opponent.Name = "pictureBox_opponent";
             this.pictureBox_opponent.Size = new System.Drawing.Size(320, 467);
             this.pictureBox_opponent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,6 +127,7 @@
             // pictureBox_player
             // 
             this.pictureBox_player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_player.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_player.Location = new System.Drawing.Point(646, 55);
             this.pictureBox_player.Name = "pictureBox_player";
             this.pictureBox_player.Size = new System.Drawing.Size(320, 467);
