@@ -14,7 +14,7 @@ Under Construction
 Under Construction
 
 ## Version 
-* Version 0.1 (In Development)
+* Version 0.2 (In Development)
 
 ## How-to use this code
 Under Construction
